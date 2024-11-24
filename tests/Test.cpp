@@ -57,8 +57,12 @@ TEST(ExecutorTest,should_return_1_0_given_command_is_M_and_facing_is_E)
     const Pose target({1, 0, 'E'});
     ASSERT_EQ(target, executor->Query());
 }
+TEST(ExecutorTest, should_return_position_2_2_facing_E_given_command_is_MMRMM) {
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'N'}));
+    executor->Execute("MMRMM");
+    const Pose target = {2, 2, 'E'};
+    ASSERT_EQ(target, executor->Query());
+}
 
 }
-//
-// Created by DELL on 2024/11/23.
-//
+
