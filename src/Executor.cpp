@@ -71,6 +71,4 @@ void Executor::TurnRight() {
     }
 }
 }
-//
-// Created by DELL on 2024/11/23.
-//
+

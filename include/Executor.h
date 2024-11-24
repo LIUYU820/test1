@@ -39,12 +39,7 @@ public:
 private:
     Pose pose;
 };
-
 }
-//
-// Created by DELL on 2024/11/23.
-//
-
 #ifndef EXECUTOR_H
 #define EXECUTOR_H
 
