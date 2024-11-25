@@ -2,6 +2,7 @@
 namespace adas {
 //类的声明在adas空间作用域内，因此在实现类的成员时，要使用空间作用域解析符
 //在函数声明时，已经明确了默认参数，因此在实现时，无需加上默认值
+
     bool operator ==(const Pose& poseA,const Pose& poseB) {
         return (poseA.x == poseB.x) && (poseA.y == poseB.y) && (poseA.heading == poseB.heading);
     }
